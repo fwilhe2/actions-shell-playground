@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: sudo mv mysh /usr/local/bin/mysh; chmod +x /usr/local/bin/mysh
+    - run: wget https://github.com/fwilhe2/rustplayground/releases/download/1/rustplayground; sudo mv rustplayground /usr/local/bin/mysh; chmod +x /usr/local/bin/mysh
     - name: Display the environment variables and their values
       run: |
-        abc
+        >>>++>+++<+>+>
       shell: mysh {0}
