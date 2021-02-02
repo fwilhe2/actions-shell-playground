@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - run: sudo mv mysh /usr/local/bin/mysh; chmod +x /usr/local/bin/mysh
     - name: Display the environment variables and their values
       run: |
-        print %ENV
-      shell: perl {0}
+        abc
+      shell: mysh {0}
