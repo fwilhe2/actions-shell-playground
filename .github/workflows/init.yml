@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Display the environment variables and their values
+      run: |
+        print %ENV
+      shell: perl {0}
